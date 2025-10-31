@@ -1,43 +1,19 @@
 <template>
   <footer class="bg-green-900 text-slate-200">
-    <div class="mx-auto max-w-7xl px-6 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="mx-auto max-w-7xl px-4 md:px-6 py-8 md:py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
         <!-- Brand / Intro -->
         <div>
           <NuxtLink to="/" class="flex items-center gap-3">
             <span class="sr-only">Company</span>
-            <!-- lightweight SVG logo (replace with your asset) -->
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-8 w-8 text-emerald-400" fill="none"
-              aria-hidden="true">
-              <path d="M4 12c0-4 4-8 8-8s8 4 8 8-4 8-8 8-8-4-8-8z" stroke="currentColor" stroke-width="1.2"
-                stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M8 12h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg> -->
 
             <span class="text-lg font-semibold tracking-tight">SobatSasirangan</span>
           </NuxtLink>
-
-          <!-- <p class="mt-4 text-sm text-slate-400 max-w-sm">
-            Building tomorrow's experiences today — pragmatic, modular, and built for scale.
-          </p> -->
         </div>
 
         <!-- Navigation groups -->
-        <div class="grid grid-cols-2 gap-6 md:col-span-1">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:col-span-1">
           <div>
-            <!-- <h4 class="mb-3 text-sm font-medium text-slate-100">Menu</h4>
-            <ul class="space-y-2 text-sm text-slate-400">
-              <li>
-                <NuxtLink to="/features" class="transition hover:text-white">Features</NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/pricing" class="transition hover:text-white">Pricing</NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/roadmap" class="transition hover:text-white">Roadmap</NuxtLink>
-              </li>
-            </ul> -->
           </div>
 
           <div>
@@ -65,32 +41,35 @@
           <p class="mt-2 text-sm text-slate-400">Join our mailing list to receive product updates and strategic
             insights.</p>
 
-          <form @submit.prevent="subscribe" class="mt-4 flex gap-2">
+          <form @submit.prevent="subscribe" class="mt-4 flex flex-col sm:flex-row gap-2">
             <label for="footer-email" class="sr-only">Email address</label>
             <input id="footer-email" v-model="email" type="email" required placeholder="you@company.com"
               class="flex-1 rounded-md border border-emerald-700 bg-green-900 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 transition" />
 
             <button type="submit"
-              class="inline-flex items-center gap-2 rounded-md bg-emerald-500 px-4 py-2 text-sm font-medium text-slate-900 transition transform hover:-translate-y-0.5 active:translate-y-0">
+              class="inline-flex items-center justify-center gap-2 rounded-md bg-emerald-500 px-4 py-2 text-sm font-medium text-slate-900 transition transform hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap">
               Subscribe
             </button>
           </form>
 
           <p v-if="subscribed" class="mt-3 text-sm text-emerald-300">Thanks — we've received your submission.</p>
-
-          <!-- <p class="mt-4 text-xs text-slate-500">We respect your privacy. Unsubscribe anytime.</p> -->
         </div>
       </div>
 
       <!-- Bottom bar -->
-      <div class="mt-8 border-t border-green-900 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p class="text-sm text-slate-500">© {{ year }} SobatSasirangan. All rights reserved.</p>
+      <div
+        class="mt-8 border-t border-green-900 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+        <p class="text-sm text-slate-500 order-3 md:order-1 w-full md:w-auto">© {{ year }} SobatSasirangan. All rights
+          reserved.</p>
 
-        <div class="flex items-center gap-4">
-          <NuxtLink to="/privacy" class="text-sm text-slate-400 hover:text-white">Privacy</NuxtLink>
-          <NuxtLink to="/terms" class="text-sm text-slate-400 hover:text-white">Terms</NuxtLink>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center md:justify-end gap-4 order-1 md:order-3 w-full md:w-auto">
+          <div class="flex items-center gap-4">
+            <NuxtLink to="/privacy" class="text-sm text-slate-400 hover:text-white">Privacy</NuxtLink>
+            <NuxtLink to="/terms" class="text-sm text-slate-400 hover:text-white">Terms</NuxtLink>
+          </div>
 
-          <div class="ml-2 flex items-center gap-3">
+          <div class="flex items-center gap-3">
             <!-- Social icons (use real links) -->
             <a href="#" aria-label="Twitter" class="p-1 rounded-md hover:bg-green-900">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" fill="none"
