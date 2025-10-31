@@ -58,7 +58,7 @@
 
 <style lang="css" scoped>
 #hero-section-bg {
-  background-image: url('bg-sasirangan.jpg');
+  background-image: url('/bg-sasirangan.jpg');
   background-size: cover;
   filter: brightness(0.7);
 }
