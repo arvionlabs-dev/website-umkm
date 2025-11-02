@@ -15,13 +15,13 @@
         </li>
 
         <li class="group inline-block">
-          <NuxtLink to="/umkms">UMKMs</NuxtLink>
+          <NuxtLink to="/umkm">UMKMs</NuxtLink>
           <div aria-hidden="true"
             class="w-full h-0.5 bg-green-600 transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100" />
         </li>
 
         <li class="group inline-block">
-          <NuxtLink to="/products">Products</NuxtLink>
+          <NuxtLink to="/sasirangan">Products</NuxtLink>
           <div aria-hidden="true"
             class="w-full h-0.5 bg-green-600 transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100" />
         </li>
@@ -51,7 +51,7 @@
 
       <!-- CTA button (desktop visible) -->
       <Button class="hidden md:inline-block px-3 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3 text-xs md:text-sm lg:text-base">
-        <span class="font-semibold">Trending!</span>
+        <span class="font-semibold">Trending Right NOW!</span>
       </Button>
     </div>
 
@@ -66,10 +66,10 @@
             <NuxtLink @click="closeMenu" to="/" class="block py-2">Home</NuxtLink>
           </li>
           <li>
-            <NuxtLink @click="closeMenu" to="/umkms" class="block py-2">UMKMs</NuxtLink>
+            <NuxtLink @click="closeMenu" to="/umkm" class="block py-2">UMKMs</NuxtLink>
           </li>
           <li>
-            <NuxtLink @click="closeMenu" to="/products" class="block py-2">Products</NuxtLink>
+            <NuxtLink @click="closeMenu" to="/sasirangan" class="block py-2">Products</NuxtLink>
           </li>
           <li>
             <NuxtLink @click="closeMenu" to="/about" class="block py-2">About</NuxtLink>

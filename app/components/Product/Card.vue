@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white">
+  <div class="group bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
     <div v-if="props.imageUrl" class="overflow-hidden">
       <nuxt-img :src="props.imageUrl" class="w-full hover:scale-105 transition" />
     </div>
