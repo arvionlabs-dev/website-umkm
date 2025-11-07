@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mx-auto">
     <nav-bar />
     <slot />
   </div>
@@ -11,6 +11,6 @@
 
 <style>
 body {
-  background-color: #5ee9b5;
+  background-color: #ffffff;
 }
 </style>

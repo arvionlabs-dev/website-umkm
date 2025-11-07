@@ -21,6 +21,8 @@
             v-for="product in productList" 
             :key="product.id"
             :title="product.nama"
+            :price="product.harga"
+            :seller="product.umkm"
             :description="product.deskripsi"
             :image-url="product.imageUrl"
             :more-info-url="product.moreInfoUrl"

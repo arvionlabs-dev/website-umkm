@@ -1,75 +1,44 @@
 <template>
-    <div class="relative w-screen md:max-w-7xl mx-auto md:px-4 py-6 md:py-8">
-        <!-- Navigation Buttons -->
-        <button @click="previousSlide"
-            class="absolute cursor-pointer hidden md:block -left-3 md:left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-2 md:p-3 shadow-lg hover:bg-gray-50 transition"
-            aria-label="Previous slide">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6 text-gray-600" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-        </button>
-
+    <div class="relative w-full max-w-7xl mx-auto px-4 py-6 md:py-8">
         <!-- Carousel Container -->
-        <div class="overflow-hidden mx-6 md:mx-12">
-            <div class="flex transition-transform duration-500 ease-in-out"
+        <div
+            ref="carouselContainer"
+            class="overflow-hidden cursor-grab active:cursor-grabbing"
+            @mousedown="handleMouseDown"
+            @mousemove="handleMouseMove"
+            @mouseup="handleMouseUp"
+            @mouseleave="handleMouseUp"
+            @touchstart="handleTouchStart"
+            @touchmove="handleTouchMove"
+            @touchend="handleTouchEnd">
+            <div
+                class="flex transition-transform duration-500 ease-in-out"
+                :class="{ 'transition-none': isDragging }"
                 :style="{ transform: `translateX(-${currentIndex * (100 / slidesPerView)}%)` }">
-                <div v-for="(testimonial, index) in testimonials" :key="index" class="shrink-0 px-2 md:px-3"
+                <div v-for="(testimonial, index) in testimonials" :key="index" class="shrink-0 px-3"
                     :style="{ width: `${100 / slidesPerView}%` }">
-                    <div class="bg-white rounded-xl md:rounded-2xl shadow-lg p-4 md:p-8 h-full flex flex-col">
-                        <!-- Logo -->
-                        <div class="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
-                            <div
-                                class="w-8 md:w-10 h-8 md:h-10 bg-gray-200 rounded-full flex items-center justify-center shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6 text-gray-600"
-                                    fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                </svg>
-                            </div>
-                            <h3 class="text-base md:text-xl font-bold text-gray-800 line-clamp-1">{{ testimonial.company
-                            }}</h3>
-                        </div>
-
-                        <!-- Testimonial Text -->
-                        <p
-                            class="text-xs md:text-sm text-gray-600 leading-relaxed mb-4 md:mb-8 grow line-clamp-3 md:line-clamp-4">
-                            {{ testimonial.text }}
+                    <div class="bg-white rounded-xl border border-gray-200 p-6 md:p-8 h-full flex flex-col select-none">
+                        <!-- Testimonial Text with quotes -->
+                        <p class="font-dm-sans text-sm md:text-base text-gray-700 leading-relaxed mb-8 grow text-center">
+                            " {{ testimonial.text }} "
                         </p>
 
                         <!-- Author Info -->
-                        <div class="flex flex-col items-center text-center pt-4 md:pt-6 border-t border-gray-100">
-                            <div
-                                class="w-12 md:w-16 h-12 md:h-16 bg-gray-100 rounded-full flex items-center justify-center mb-2 md:mb-3 shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 md:h-8 w-6 md:w-8 text-gray-400"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                </svg>
-                            </div>
-                            <h4 class="font-bold text-gray-900 text-sm md:text-lg line-clamp-1">{{ testimonial.author }}
-                            </h4>
-                            <p class="text-gray-500 text-xs md:text-sm line-clamp-1">{{ testimonial.role }}</p>
+                        <div class="flex flex-col items-center text-center">
+                            <h4 class="font-eb-garamond font-bold text-gray-900 text-base md:text-lg mb-1">{{ testimonial.author }}</h4>
+                            <p class="font-dm-sans text-gray-600 text-xs md:text-sm">{{ testimonial.role }}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <button @click="nextSlide"
-            class="absolute cursor-pointer hidden md:block -right-3 md:right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-2 md:p-3 shadow-lg hover:bg-gray-50 transition"
-            aria-label="Next slide">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6 text-gray-600" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-        </button>
-
-        <!-- Dots Indicator (Optional) -->
-        <div class="flex justify-center gap-1 md:gap-2 mt-6 md:mt-8">
+        <!-- Dots Indicator -->
+        <div class="flex justify-center gap-2 mt-8">
             <button v-for="(_, index) in Math.ceil(testimonials.length - slidesPerView + 1)" :key="index"
                 @click="goToSlide(index)" :class="[
-                    'rounded-full transition-all',
-                    currentIndex === index ? 'bg-gray-800 w-6 md:w-8 h-2 md:h-2' : 'bg-gray-300 w-2 h-2'
+                    'rounded-full transition-all w-2 h-2',
+                    currentIndex === index ? 'bg-gray-400' : 'bg-gray-300'
                 ]" :aria-label="`Go to slide ${index + 1}`"></button>
         </div>
     </div>
@@ -77,7 +46,6 @@
 
 <script lang="ts" setup>
 interface Testimonial {
-    company: string;
     text: string;
     author: string;
     role: string;
@@ -90,33 +58,98 @@ const props = defineProps<{
 // Default testimonials data
 const testimonials = computed(() => props.testimonials || [
     {
-        company: 'Zoomerr',
-        text: 'Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed pellentesque arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.',
-        author: 'Author Name',
-        role: 'Role'
+        text: 'Belanja di Sobat Sasirangan sangat nyaman. Disamping banyak koleksinya, harganya juga bersahabat. Sambil menunggu rekan yang masih sibuk memilih koleksi yang diinginkan, kita bisa duduk-duduk santai sambil menikmati secangkir kopi atau teh hangat plus kue khas banjarmasin yang bisa kita peroleh secara gratis',
+        author: 'Moh. Auffa',
+        role: 'Banjarmasin, Kalimantan Selatan'
     },
     {
-        company: 'ArtVenue',
-        text: 'Nisl vitae viverra dignissim nibh. Nibh imperdiet integer vitae consequat adipiscing pellentesque. Sed amet tincidunt morbi non sed donec mollis pharetra neque.',
-        author: 'Author Name',
-        role: 'Role'
+        text: 'Belanja di Sobat Sasirangan sangat nyaman. Disamping banyak koleksinya, harganya juga bersahabat. Sambil menunggu rekan yang masih sibuk memilih koleksi yang diinginkan, kita bisa duduk-duduk santai sambil menikmati secangkir kopi atau teh hangat plus kue khas banjarmasin yang bisa kita peroleh secara gratis',
+        author: 'Maulana',
+        role: 'Bandar, Kalimantan Selatan'
     },
     {
-        company: 'Zoomerr',
-        text: 'Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed pellentesque arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.',
-        author: 'Author Name',
-        role: 'Role'
+        text: 'Belanja di Sobat Sasirangan sangat nyaman. Disamping banyak koleksinya, harganya juga bersahabat. Sambil menunggu rekan yang masih sibuk memilih koleksi yang diinginkan, kita bisa duduk-duduk santai sambil menikmati secangkir kopi atau teh hangat plus kue khas banjarmasin yang bisa kita peroleh secara gratis',
+        author: 'Ahmad',
+        role: 'Martapura, Kalimantan Selatan'
     },
     {
-        company: 'ArtVenue',
-        text: 'Nisl vitae viverra dignissim nibh. Nibh imperdiet integer vitae consequat adipiscing pellentesque. Sed amet tincidunt morbi non sed donec mollis pharetra neque.',
-        author: 'Author Name',
-        role: 'Role'
-    }
+        text: 'Belanja di Sobat Sasirangan sangat nyaman. Disamping banyak koleksinya, harganya juga bersahabat. Sambil menunggu rekan yang masih sibuk memilih koleksi yang diinginkan, kita bisa duduk-duduk santai sambil menikmati secangkir kopi atau teh hangat plus kue khas banjarmasin yang bisa kita peroleh secara gratis',
+        author: 'Ahmad',
+        role: 'Martapura, Kalimantan Selatan'
+    },
 ]);
 
 const currentIndex = ref(0);
 const slidesPerView = ref(2);
+const carouselContainer = ref<HTMLElement | null>(null);
+
+// Drag/Swipe functionality
+const isDragging = ref(false);
+const startX = ref(0);
+
+// Mouse events
+const handleMouseDown = (e: MouseEvent) => {
+    isDragging.value = true;
+    startX.value = e.pageX;
+};
+
+const handleMouseMove = (e: MouseEvent) => {
+    if (!isDragging.value || !carouselContainer.value) return;
+
+    const currentX = e.pageX;
+    const diff = startX.value - currentX;
+    const containerWidth = carouselContainer.value.offsetWidth;
+    const threshold = containerWidth * 0.2; // 20% of container width
+
+    if (Math.abs(diff) > threshold) {
+        if (diff > 0 && currentIndex.value < testimonials.value.length - slidesPerView.value) {
+            currentIndex.value++;
+            isDragging.value = false;
+        } else if (diff < 0 && currentIndex.value > 0) {
+            currentIndex.value--;
+            isDragging.value = false;
+        }
+    }
+};
+
+const handleMouseUp = () => {
+    isDragging.value = false;
+};
+
+// Touch events
+const handleTouchStart = (e: TouchEvent) => {
+    const touch = e.touches?.[0];
+    if (!touch) return;
+
+    isDragging.value = true;
+    startX.value = touch.clientX;
+};
+
+const handleTouchMove = (e: TouchEvent) => {
+    if (!isDragging.value || !carouselContainer.value) return;
+
+    const touch = e.touches?.[0];
+    if (!touch) return;
+
+    const currentX = touch.clientX;
+    const diff = startX.value - currentX;
+    const containerWidth = carouselContainer.value.offsetWidth;
+    const threshold = containerWidth * 0.2; // 20% of container width
+
+    if (Math.abs(diff) > threshold) {
+        if (diff > 0 && currentIndex.value < testimonials.value.length - slidesPerView.value) {
+            currentIndex.value++;
+            isDragging.value = false;
+        } else if (diff < 0 && currentIndex.value > 0) {
+            currentIndex.value--;
+            isDragging.value = false;
+        }
+    }
+};
+
+const handleTouchEnd = () => {
+    isDragging.value = false;
+};
 
 // Responsive slides per view
 onMounted(() => {
@@ -136,49 +169,9 @@ const updateSlidesPerView = () => {
     }
 };
 
-const nextSlide = () => {
-    if (currentIndex.value < testimonials.value.length - slidesPerView.value) {
-        currentIndex.value++;
-    } else {
-        currentIndex.value = 0;
-    }
-};
-
-const previousSlide = () => {
-    if (currentIndex.value > 0) {
-        currentIndex.value--;
-    } else {
-        currentIndex.value = testimonials.value.length - slidesPerView.value;
-    }
-};
-
 const goToSlide = (index: number) => {
     currentIndex.value = index;
 };
-
-// Auto-play (optional)
-let autoPlayInterval: ReturnType<typeof setInterval> | null = null;
-
-const startAutoPlay = () => {
-    autoPlayInterval = setInterval(() => {
-        nextSlide();
-    }, 5000);
-};
-
-const stopAutoPlay = () => {
-    if (autoPlayInterval) {
-        clearInterval(autoPlayInterval);
-    }
-};
-
-// Uncomment to enable auto-play
-// onMounted(() => {
-//   startAutoPlay();
-// });
-
-// onUnmounted(() => {
-//   stopAutoPlay();
-// });
 </script>
 
 <style scoped>

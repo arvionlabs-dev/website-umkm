@@ -1,5 +1,5 @@
 <template>
-  <button :class="twMerge('bg-green-600 px-4 py-2 cursor-pointer hover:bg-green-500 transition', props.className)">
+  <button :class="twMerge('px-4 py-2 cursor-pointer', props.className)">
     <slot></slot>
   </button>
 </template>

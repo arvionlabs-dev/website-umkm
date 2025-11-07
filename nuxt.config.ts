@@ -12,5 +12,12 @@ export default defineNuxtConfig({
     ],
   },
 
-  modules: ['@nuxt/image', '@nuxt/icon'],
+  modules: ['@nuxt/image', '@nuxt/icon', '@nuxt/fonts'],
+
+  fonts: {
+    families: [
+      { name: 'EB Garamond', provider: 'google' },
+      { name: 'DM Sans', provider: 'google' }
+    ]
+  }
 })

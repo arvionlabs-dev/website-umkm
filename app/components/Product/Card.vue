@@ -1,19 +1,33 @@
 <template>
-  <div class="group bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-    <div v-if="props.imageUrl" class="overflow-hidden">
-      <nuxt-img :src="props.imageUrl" class="w-full hover:scale-105 transition" />
+  <div class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 h-full flex flex-col">
+    <!-- Product Image -->
+    <div v-if="props.imageUrl" class="overflow-hidden aspect-square bg-gray-100 shrink-0">
+      <nuxt-img :src="props.imageUrl" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
     </div>
-    <div class="p-4 flex flex-col gap-4">
-      <h2 class="font-bold text-lg">{{ props.title }}</h2>
-      <p class="">
-        {{ props.description }}
-      </p>
-      <nuxt-link v-if="props.moreInfoUrl" :to="props.moreInfoUrl"
-        class="group flex items-center gap-2 hover:underline hover:underline-offset-2">
-        <span class="text-emerald-600 font-semibold">More Info</span>
-        <Icon name="line-md:arrow-right"
-          class="transform transition-transform duration-150 text-emerald-600 ease-out group-hover:translate-x-1" aria-hidden="true" />
-      </nuxt-link>
+
+    <!-- Product Info -->
+    <div class="p-4 flex flex-col grow">
+      <div class="flex flex-col gap-1.5">
+        <!-- Product Title -->
+        <h3 class="font-dm-sans font-semibold text-base text-gray-900 line-clamp-2">{{ props.title }}</h3>
+
+        <!-- Price -->
+        <p class="font-dm-sans text-base text-gray-900">
+          Rp. {{ props.price?.toLocaleString('id-ID') }}
+        </p>
+
+        <!-- Rating -->
+        <div class="flex items-center gap-1 mt-auto">
+          <Icon name="material-symbols:star" class="text-yellow-400 text-base" />
+          <span class="text-base font-dm-sans text-gray-700">{{ props.rating || '5.0' }}</span>
+        </div>
+      </div>
+
+      <!-- Seller - Push to bottom -->
+      <div class="flex items-center gap-1.5 mt-auto pt-1.5">
+        <Icon name="mdi:store-outline" class="text-slate-800 text-2xl" />
+        <span class="font-dm-sans text-[14px] text-slate-800">{{ props.seller || '-'}}</span>
+      </div>
     </div>
   </div>
 </template>
@@ -22,8 +36,9 @@
 interface ProductCartProps {
   imageUrl?: string;
   title: string;
-  description?: string;
-  moreInfoUrl?: string;
+  price?: number;
+  rating?: number;
+  seller?: string;
 }
 
 const props = defineProps<ProductCartProps>()
