@@ -12,7 +12,12 @@ export default defineNuxtConfig({
     ],
   },
 
-  modules: ['@nuxt/image', '@nuxt/icon', '@nuxt/fonts'],
+  modules: [
+    '@nuxt/image',
+    '@nuxt/icon',
+    '@nuxt/fonts',
+    '@nuxtjs/leaflet'
+  ],
 
   fonts: {
     families: [

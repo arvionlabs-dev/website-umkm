@@ -49,7 +49,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
-
+        
         <!-- CTA button (desktop visible) -->
         <Button class="hidden bg-yellow-600 text-white rounded-lg md:inline-block px-3 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3 text-xs md:text-sm lg:text-base">
           <a href="/sasirangan"><span class="font-dm-sans font-semibold tracking-normal">Yang lagi rame!</span></a>

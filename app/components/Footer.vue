@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-white text-slate-900 border-t border-slate-200">
-    <div class="mx-auto max-w-7xl px-4 md:px-6 py-8 md:py-12">
+    <div class="mx-auto max-w-6xl px-2 py-8 md:py-12">
       <div class="flex flex-row justify-between">
         <!-- Brand / Intro -->
         <div>
