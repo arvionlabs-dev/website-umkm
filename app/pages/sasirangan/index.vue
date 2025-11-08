@@ -26,6 +26,7 @@
             :description="product.deskripsi"
             :image-url="product.imageUrl"
             :more-info-url="product.moreInfoUrl"
+            :show-umkm-icon="true"
           />
         </div>
       </div>
