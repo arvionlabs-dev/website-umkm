@@ -20,10 +20,10 @@
           <umkm-card 
             v-for="umkm in umkmList" 
             :key="umkm.id"
-            :nama="umkm.nama"
-            :deskripsi="umkm.deskripsi"
-            :image-url="umkm.foto[0] || ''"
-            :slug="umkm.slug"
+            :nama="umkm.nama || '-'"
+            :deskripsi="umkm.deskripsi || '-'"
+            :image-url="umkm.foto?.[0] || ''"
+            :slug="umkm.slug || '-'"
           />
         </div>
       </div>
@@ -33,25 +33,6 @@
 </template>
 
 <script lang="ts" setup>
-interface Produk {
-  id: number;
-  nama: string;
-  deskripsi: string;
-  harga: number;
-}
-
-interface Umkm {
-  nama: string;
-  deskripsi: string;
-  alamat: string;
-  kontak: string;
-  id: number;
-  slug: string;
-  foto: string[];
-  produks: Produk[];
-}
-
-// Dummy data - nanti bisa diganti dengan data dari API
 const umkmList: Umkm[] = [
   {
     id: 1,
