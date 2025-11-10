@@ -49,7 +49,7 @@
       </div>
       <Button
         @click="handleExplore"
-        className="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-3 rounded-full font-medium font-dm-sans">
+        class="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-3 rounded-full font-medium font-dm-sans">
         <span>Explore</span>
       </Button>
     </div>

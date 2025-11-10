@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-white text-slate-900 border-t border-slate-200">
-    <div class="mx-auto max-w-6xl px-2 py-8 md:py-12">
-      <div class="flex flex-row justify-between">
+    <div class="mx-auto md:block flex flex-col max-w-6xl px-2 py-8 md:py-12">
+      <div class="flex md:flex-row flex-col gap-12 md:gap-0 md:p-0 px-4 justify-between">
         <!-- Brand / Intro -->
         <div>
           <NuxtLink to="/" class="flex items-center gap-3">
@@ -13,7 +13,7 @@
 
         <!-- Navigation groups -->
         <div class="flex flex-row">
-            <ul class="flex flex-row gap-12 items-center text-sm text-slate-600 font-dm-sans">
+            <ul class="flex flex-col  md:flex-row gap-4 md:gap-12 md:items-center text-sm text-slate-600 font-dm-sans flex-wrap">
               <li class="">
                 <NuxtLink to="/" class="transition text-slate-900">Home</NuxtLink>
               </li>
@@ -127,26 +127,5 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-
-const email = ref('')
-const subscribed = ref(false)
 const year = new Date().getFullYear()
-
-const subscribe = async () => {
-  // Forward-thinking placeholder: wire this to your API or marketing automation (SendGrid, Mailgun, etc.)
-  // Example integration: useNuxtApp().$fetch('/api/newsletter', { method: 'POST', body: { email: email.value } })
-  // For now we'll simulate success
-  try {
-    // simulate async op
-    await new Promise((r) => setTimeout(r, 500))
-    subscribed.value = true
-    email.value = ''
-  } catch (e) {
-    // handle error (toast, telemetry, etc.)
-    console.error(e)
-  }
-}
 </script>
-
-<!-- Tailwind utilities only; no component-scoped CSS required -->
