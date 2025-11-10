@@ -10,9 +10,4 @@ import { twMerge } from 'tailwind-merge';
 const props = defineProps<{
   class?: string
 }>();
-
-
-
 </script>
-
-<style></style>
