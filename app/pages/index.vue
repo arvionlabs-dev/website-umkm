@@ -55,12 +55,12 @@
   </section>
 
   <section class="p-4 md:p-8 lg:p-16 bg-gray-50">
-    <div class="flex flex-row items-center w-full justify-between mx-0 text-center">
+    <div class="flex flex-col gap-4 md:gap-0 md:flex-row md:items-center w-full justify-between mx-0 text-center">
       <div class="text-left">
-        <h2 class="mb-4 font-eb-garamond font-bold text-2xl md:text-3xl lg:text-4xl">Hubungi Kami</h2>
+        <h2 class="md:mb-4 font-eb-garamond font-bold text-2xl md:text-3xl lg:text-4xl">Hubungi Kami</h2>
         <p class="font-dm-sans text-gray-700">Jika ada yang ingin ditanyakan</p>
       </div>
-      <Button className="bg-green-500 px-4 py-3 rounded-md hover:bg-green-600 inline-flex items-center gap-2 text-xl">
+      <Button class="bg-green-500 px-4 py-3 rounded-md hover:bg-green-600 inline-flex items-center gap-2 text-xl">
         <Icon name="mdi:whatsapp" class="text-white" />
         <span class="font-dm-sans font-semibold text-base text-white">Hubungi via WhatsApp</span>
       </Button>
