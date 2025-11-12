@@ -54,7 +54,7 @@ onUnmounted(() => {
 <template>
   <div class="w-full flex flex-col gap-4">
     <ClientOnly>
-      <iframe v-if="props.gmapIframeSrc" :src="props.gmapIframeSrc" width="600" height="450" style="border:0;"
+      <iframe v-if="props.gmapIframeSrc" :src="props.gmapIframeSrc" class="w-full max-w-[600px] h-[300px] md:h-[450px] rounded-lg" style="border:0;"
         loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <!-- <LMap
         :style="{ height: (props.heightInPx ? props.heightInPx + 'px' : '100%'), width: (props.widthInPx ? props.widthInPx + 'px' : '100%'), borderRadius: '16px' }"

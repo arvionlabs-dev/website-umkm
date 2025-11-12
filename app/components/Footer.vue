@@ -7,7 +7,7 @@
           <NuxtLink to="/" class="flex items-center gap-3">
             <span class="sr-only">Company</span>
 
-            <span class="text-lg font-semibold tracking-wider font-eb-garamond text-slate-900">Sobat Sasirangan</span>
+            <span class="text-lg font-semibold tracking-wider font-eb-garamond text-slate-900">Tjendera</span>
           </NuxtLink>
         </div>
 
@@ -18,13 +18,10 @@
                 <NuxtLink to="/" class="transition text-slate-900">Home</NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/" class="transition text-slate-900">UMKMs</NuxtLink>
+                <NuxtLink to="/umkm" class="transition text-slate-900">UMKM</NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/" class="transition text-slate-900">Products</NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/" class="transition text-slate-900">About</NuxtLink>
+                <NuxtLink to="/about" class="transition text-slate-900">About</NuxtLink>
               </li>
             </ul>
         </div>
@@ -90,7 +87,7 @@
       <!-- Bottom bar -->
       <div
         class="mt-8 border-slate-200 pt-6 flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
-        <p class="text-sm text-slate-600 font-dm-sans order-3 md:order-1 w-full md:w-auto">© {{ year }} SobatSasirangan. All rights
+        <p class="text-sm text-slate-600 font-dm-sans order-3 md:order-1 w-full md:w-auto">© {{ year }} Tjendera. All rights
           reserved.</p>
 
         <!-- <div

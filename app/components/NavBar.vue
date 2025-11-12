@@ -1,9 +1,9 @@
 <template>
-  <nav class="flex w-full bg-white text-zinc-900 px-4 md:px-8 lg:px-16 py-4 justify-between fixed z-50 items-center"
+  <nav class="flex w-full bg-white text-zinc-900 px-4 md:px-8 lg:px-16 py-4 justify-between fixed z-40 items-center"
     role="navigation" aria-label="Main navigation">
     <div class="flex items-center justify-between w-full gap-4 md:gap-8">
       <div class="">
-        <h1 class="font-bold font-eb-garamond text-lg md:text-xl lg:text-2xl tracking-wide">Sobat Sasirangan</h1>
+        <h1 class="font-bold font-eb-garamond text-lg md:text-xl lg:text-2xl tracking-wide">Tjendera</h1>
       </div>
 
       <!-- Desktop menu -->
@@ -17,13 +17,7 @@
         </li>
 
         <li class="group inline-block">
-          <NuxtLink to="/umkm" class="tracking-normal">UMKMs</NuxtLink>
-          <div aria-hidden="true"
-            class="w-full h-0.5 bg-slate-800 transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100" />
-        </li>
-
-        <li class="group inline-block">
-          <NuxtLink to="/sasirangan" class="tracking-normal">Products</NuxtLink>
+          <NuxtLink to="/umkm" class="tracking-normal">UMKM</NuxtLink>
           <div aria-hidden="true"
             class="w-full h-0.5 bg-slate-800 transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100" />
         </li>
@@ -36,6 +30,25 @@
       </ul>
 
       <div class="flex items-center gap-3">
+        <!-- Quick Search Button -->
+        <button
+          @click="openQuickSearch"
+          class="hidden md:flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors text-sm text-gray-600"
+        >
+          <Icon name="mdi:magnify" class="text-lg" />
+          <span>Cari...</span>
+          <kbd class="hidden lg:inline-block px-2 py-0.5 text-xs bg-gray-100 border border-gray-300 rounded">Ctrl+K</kbd>
+        </button>
+
+        <!-- Mobile search icon -->
+        <button
+          @click="openQuickSearch"
+          class="md:hidden p-2 rounded-md hover:bg-gray-100"
+          aria-label="Search"
+        >
+          <Icon name="mdi:magnify" class="text-xl" />
+        </button>
+
       <!-- Mobile hamburger -->
         <button ref="hamburgerBtn" @click="toggleMenu" :aria-expanded="isOpen" aria-controls="mobile-menu"
           aria-label="Toggle navigation"
@@ -50,10 +63,10 @@
           </svg>
         </button>
         
-        <!-- CTA button (desktop visible) -->
-        <Button class="hidden bg-yellow-600 text-white rounded-lg md:inline-block px-3 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3 text-xs md:text-sm lg:text-base">
+        <!-- CTA button (desktop visible) - COMMENTED OUT -->
+        <!-- <Button class="hidden bg-yellow-600 text-white rounded-lg md:inline-block px-3 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3 text-xs md:text-sm lg:text-base">
           <a href="/sasirangan"><span class="font-dm-sans font-semibold tracking-normal">Yang lagi rame!</span></a>
-        </Button>
+        </Button> -->
       </div>
     </div>
 
@@ -70,22 +83,19 @@
             <NuxtLink @click="closeMenu" to="/" class="block py-2 tracking-normal text-gray-900 hover:text-green-600 transition">Home</NuxtLink>
           </li>
           <li>
-            <NuxtLink @click="closeMenu" to="/umkm" class="block py-2 tracking-normal text-gray-900 hover:text-green-600 transition">UMKMs</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink @click="closeMenu" to="/sasirangan" class="block py-2 tracking-normal text-gray-900 hover:text-green-600 transition">Products</NuxtLink>
+            <NuxtLink @click="closeMenu" to="/umkm" class="block py-2 tracking-normal text-gray-900 hover:text-green-600 transition">UMKM</NuxtLink>
           </li>
           <li>
             <NuxtLink @click="closeMenu" to="/about" class="block py-2 tracking-normal text-gray-900 hover:text-green-600 transition">About</NuxtLink>
           </li>
         </ul>
 
-        <div class="mt-4">
-          <!-- mobile CTA -->
+        <!-- mobile CTA - COMMENTED OUT -->
+        <!-- <div class="mt-4">
           <Button class="w-full px-4 py-2 text-sm bg-yellow-600 text-white">
             <span class="font-dm-sans font-semibold tracking-normal">Yang lagi rame!</span>
           </Button>
-        </div>
+        </div> -->
       </div>
     </div>
   </nav>
@@ -94,12 +104,14 @@
 <script lang="ts" setup>
 import { ref, onMounted, onBeforeUnmount, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import Button from './Button.vue'
 
 const isOpen = ref(false)
 const mobileMenu = ref<HTMLElement | null>(null)
 const hamburgerBtn = ref<HTMLElement | null>(null)
 const route = useRoute()
+
+// QuickSearch component ref
+const quickSearchRef = ref<{ open: () => void; close: () => void } | null>(null)
 
 const toggleMenu = () => {
   isOpen.value = !isOpen.value
@@ -107,6 +119,12 @@ const toggleMenu = () => {
 
 const closeMenu = () => {
   isOpen.value = false
+}
+
+const openQuickSearch = () => {
+  // Will be implemented in layout
+  const event = new CustomEvent('open-quick-search')
+  window.dispatchEvent(event)
 }
 
 /**

@@ -9,15 +9,22 @@ export interface Produk {
 export interface Umkm {
   nama?: string;
   deskripsi?: string;
+  kategori?: string[];
   alamat?: string;
-  kontak?: string;
+  kontak?: Kontak[] | string;
   coordinates?: [number, number];
   gmapSrc?: string;
   gmapIframeSrc?: string;
-  id?: number;
+  id?: string;
   slug?: Slug;
   foto?: string[];
   produks?: Produk[];
 }
 
 export type Slug = string;
+
+export interface Kontak {
+  type: 'phone' | 'whatsapp' | 'instagram' | 'facebook' | 'twitter' | 'website';
+  username?: string;
+  value: string;
+}
