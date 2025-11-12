@@ -59,9 +59,6 @@
 <script lang="ts" setup>
 import Button from './Button.vue';
 
-const location = ref('');
-const showDropdown = ref(false);
-
 // Dummy data lokasi di Kalimantan Selatan
 const locations = [
   'Banjarmasin, Kalimantan Selatan',
@@ -76,14 +73,17 @@ const locations = [
   'Barabai, Kalimantan Selatan',
 ];
 
+const location = ref(locations[0]);
+const showDropdown = ref(false);
+
 const filteredLocations = ref([...locations]);
 
 const filterLocations = () => {
-  if (location.value.trim() === '') {
+  if (location.value?.trim() === '') {
     filteredLocations.value = [...locations];
   } else {
     filteredLocations.value = locations.filter(loc =>
-      loc.toLowerCase().includes(location.value.toLowerCase())
+      loc.toLowerCase().includes(location.value?.toLowerCase() || '')
     );
   }
   showDropdown.value = true;
