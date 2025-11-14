@@ -6,6 +6,13 @@ export interface Produk {
   imageUrl: string
 }
 
+export interface Ulasan {
+  id: number;
+  text: string;
+  author: string;
+  rating?: number;
+}
+
 export interface Umkm {
   nama?: string;
   deskripsi?: string;
@@ -19,6 +26,7 @@ export interface Umkm {
   slug?: Slug;
   foto?: string[];
   produks?: Produk[];
+  ulasan?: Ulasan[];
 }
 
 export type Slug = string;
@@ -27,4 +35,13 @@ export interface Kontak {
   type: 'phone' | 'whatsapp' | 'instagram' | 'facebook' | 'twitter' | 'website';
   username?: string;
   value: string;
+}
+
+export interface Testimonial {
+  id: number;
+  text: string;
+  author: string;
+  role?: string;
+  company?: string;
+  star?: number;
 }

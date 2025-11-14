@@ -9,8 +9,8 @@
 <script lang="ts" setup>
 const quickSearchRef = ref<{ open: () => void; close: () => void } | null>(null);
 
-// Listen for open-quick-search event from NavBar
 const handleOpenQuickSearch = () => {
+  console.log('Opening Quick Search from layout', quickSearchRef.value);
   quickSearchRef.value?.open();
 };
 
@@ -27,5 +27,20 @@ onUnmounted(() => {
 body {
   background-color: #ffffff;
   font-family: "DM Sans", sans-serif;
+}
+
+.pattern {
+  background-image: url('/bg/pattern.png');
+  background-repeat: repeat;
+}
+
+.pattern-gold {
+  background-image: url('/bg/pattern-gold.jpg');
+  background-repeat: repeat;
+  background-size: 75%;
+}
+
+.vs__dropdown-toggle {
+  height: 100%;
 }
 </style>
