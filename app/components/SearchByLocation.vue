@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-white rounded-2xl p-6 shadow-2xl shadow-blue-50/50">
+  <div class="bg-white rounded-2xl p-6 shadow-xl">
     <div class="mb-4">
-      <span class="font-dm-sans font-semibold text-gray-700 text-sm">Your location</span>
+      <span class="font-dm-sans font-semibold text-gray-700 text-sm">Lokasi anda</span>
     </div>
     <div class="flex gap-3 items-center">
       <div class="relative flex-1">
@@ -16,7 +16,7 @@
           @blur="handleBlur"
           @input="filterLocations"
           type="text"
-          placeholder="Enter your location"
+          placeholder="Masukkan lokasi Anda"
           class="w-full pl-12 pr-10 py-3 border border-gray-200 rounded-full text-gray-600 font-dm-sans focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 transition"
         />
         <button
@@ -39,9 +39,11 @@
               :key="index"
               @mousedown="selectLocation(loc)"
               class="px-4 py-3 hover:bg-yellow-50 cursor-pointer transition font-dm-sans text-gray-700 flex items-center gap-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-600" fill="currentColor" viewBox="0 0 24 24">
+              <div class="">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-600" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
               </svg>
+              </div>
               <span>{{ loc }}</span>
             </li>
           </ul>
@@ -49,7 +51,7 @@
       </div>
       <Button
         @click="handleExplore"
-        class="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-3 rounded-full font-medium font-dm-sans">
+        class="text-white px-8 py-3 rounded-full font-medium font-dm-sans">
         <span>Explore</span>
       </Button>
     </div>
@@ -57,9 +59,6 @@
 </template>
 
 <script lang="ts" setup>
-import Button from './Button.vue';
-
-// Dummy data lokasi di Kalimantan Selatan
 const locations = [
   'Banjarmasin, Kalimantan Selatan',
   'Banjarbaru, Kalimantan Selatan',
@@ -102,7 +101,6 @@ const toggleDropdown = () => {
 };
 
 const handleBlur = () => {
-  // Delay to allow click on dropdown item
   setTimeout(() => {
     showDropdown.value = false;
   }, 200);
@@ -111,7 +109,6 @@ const handleBlur = () => {
 const handleExplore = () => {
   if (location.value) {
     console.log('Exploring:', location.value);
-    // Add your explore logic here
   }
 };
 </script>

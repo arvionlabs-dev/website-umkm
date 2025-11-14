@@ -65,7 +65,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '085754028042'
+        value: '+6285754028042'
       },
       {
         type: 'instagram',
@@ -93,7 +93,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '087814447004'
+        value: '+6287814447004'
       },
       {
         type: 'instagram',
@@ -121,7 +121,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '085105183200'
+        value: '+6285105183200'
       },
       {
         type: 'instagram',
@@ -149,7 +149,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '085751000034'
+        value: '+6285751000034'
       }
     ],
   },
@@ -172,7 +172,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '082251866367'
+        value: '+6282251866367'
       }
     ],
   },
@@ -195,7 +195,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '085389008006'
+        value: '+6285389008006'
       },
       {
         type: 'instagram',
@@ -223,7 +223,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '081351700077'
+        value: '+6281351700077'
       },
       {
         type: 'instagram',
@@ -251,7 +251,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '081351919622'
+        value: '+6281351919622'
       }
     ],
   },
@@ -274,7 +274,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '081250008805'
+        value: '+6281250008805'
       },
       {
         type: 'instagram',
@@ -302,7 +302,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '085349772378'
+        value: '+6285349772378'
       }
     ],
   },
@@ -325,7 +325,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '081351755990'
+        value: '+6281351755990'
       },
       {
         type: 'instagram',
@@ -353,7 +353,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '082148802020'
+        value: '+6282148802020'
       },
       {
         type: 'instagram',
@@ -381,7 +381,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '083150579963'
+        value: '+6283150579963'
       }
     ],
   },
@@ -404,7 +404,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '083159658023'
+        value: '+6283159658023'
       },
       {
         type: 'instagram',
@@ -432,7 +432,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '081351925922'
+        value: '+6281351925922'
       },
       {
         type: 'instagram',
@@ -460,7 +460,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '082155179145'
+        value: '+6282155179145'
       }
     ],
   },
@@ -483,7 +483,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '087720443377'
+        value: '+6287720443377'
       },
       {
         type: 'instagram',
@@ -511,7 +511,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '085246667775'
+        value: '+6285246667775'
       },
       {
         type: 'instagram',
@@ -562,7 +562,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '085350133501'
+        value: '+6285350133501'
       },
       {
         type: 'instagram',
@@ -587,7 +587,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '081251345710'
+        value: '+6281251345710'
       }
     ],
   },
@@ -610,7 +610,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '085166632346'
+        value: '+6285166632346'
       },
       {
         type: 'instagram',
@@ -638,7 +638,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '085245953488'
+        value: '+6285245953488'
       }
     ],
   },
@@ -685,7 +685,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '089561797974'
+        value: '+6289561797974'
       },
       {
         type: 'instagram',
@@ -713,7 +713,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '082254757044'
+        value: '+6282254757044'
       }
     ],
   },
@@ -764,7 +764,7 @@ export const realUMKM: Record<Slug, Umkm> = {
     kontak: [
       {
         type: 'phone',
-        value: '081351247560'
+        value: '+6281351247560'
       },
       {
         type: 'instagram',
@@ -779,33 +779,29 @@ export const dummyUMKMs: Record<Slug, Umkm> = {
   'haidar-sasirangan': defaultUMKM
 };
 
-export const testimonials = [
+export const testimonials: Testimonial[] = [
   {
     id: 1,
     text: 'Website ini sangat membantu saya menemukan berbagai oleh-oleh khas Kalimantan Selatan. Informasinya lengkap dan mudah diakses!',
-    author: 'Siti Nurhaliza',
-    role: 'Wisatawan dari Jakarta',
-    company: 'Jakarta'
+    author: 'Muhammad Azka Raki',
+    role: 'Mahasiswa',
+    company: 'Jakarta',
+    star: 5
   },
   {
     id: 2,
     text: 'Sangat informatif! Saya bisa menemukan UMKM lokal dengan mudah dan kontak langsung via WhatsApp. Recommended!',
-    author: 'Ahmad Ridwan',
-    role: 'Pengusaha',
-    company: 'Banjarmasin'
-  },
-  {
-    id: 3,
-    text: 'Platform yang sangat membantu untuk mencari oleh-oleh khas Banjarmasin. Informasi lokasi dan kontaknya jelas, memudahkan saya berbelanja.',
-    author: 'Dewi Kartika',
-    role: 'Ibu Rumah Tangga',
-    company: 'Banjarbaru'
+    author: 'Moh. Auffa',
+    role: 'Mahasiswa',
+    company: 'Banjarmasin',
+    star: 4
   },
   {
     id: 4,
     text: 'Website ini benar-benar informatif dan user-friendly. Saya bisa explore berbagai UMKM lokal dengan mudah!',
-    author: 'Bambang Sutrisno',
-    role: 'Kolektor Produk Lokal',
-    company: 'Surabaya'
+    author: 'M. Rahmat Effendi',
+    role: 'Mahasiswa',
+    company: 'Surabaya',
+    star: 5
   }
 ];
