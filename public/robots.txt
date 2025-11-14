@@ -9,4 +9,4 @@ Allow: /
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://tjendera.com/sitemap.xml
+Sitemap: https://tjendera.zkranovic.tech/sitemap.xml
