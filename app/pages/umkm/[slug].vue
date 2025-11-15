@@ -25,7 +25,7 @@
 
         <section class="flex gap-1">
           <Icon name="mdi:star" class="text-yellow-400 text-base md:text-lg lg:text-xl" />
-          <span>5.0 (2500 ulasan)</span>
+          <span>{{ starAvarege(currentUMKM.ulasan ?? []) }} ({{currentUMKM.ulasan?.length ?? 0}} ulasan)</span>
         </section>
 
         <!-- Contact Info -->

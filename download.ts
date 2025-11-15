@@ -26,7 +26,7 @@ async function downloadImage(url, filename) {
 }
 
 async function downloadAllImages() {
-    const umkmList = Object.values(realUMKM)
+    const umkmList = Object.values(realUMKM).splice(29, 2)
 
     for (const umkm of umkmList) {
         if (umkm.foto && umkm.foto.length > 0) {

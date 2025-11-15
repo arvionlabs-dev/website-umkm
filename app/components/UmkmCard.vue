@@ -41,7 +41,7 @@
 
         <span class="flex gap-1 items-center">
           <Icon name="mdi:star" class="-mt-1 text-yellow-400 text-base" />
-          <span class="text-sm text-gray-600">5.0 (132 Ulasan)</span>
+          <span class="text-sm text-gray-600">{{starAvarege(props.umkm.ulasan ?? [])}} ({{props.umkm.ulasan?.length ?? 0}} Ulasan)</span>
         </span>
 
         <!-- More Info Link -->

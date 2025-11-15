@@ -73,6 +73,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         value: 'https://www.instagram.com/oleholehbanjarmasin/'
       }
     ],
+    ulasan: [
+      {
+        author: 'Sherly Augustine',
+        text: 'Tempat parkirnya terletak di depan toko, sebagian memiliki kanopi. Lumayan untuk jok motor tetap adem 😄 \n Produk yang dijual cukup lengkap: berbagai merk amplang, kaos sablon (bertema Kalimantan, Banjarmasin, dll), aneka camilan tradisional khas Banjar, dodol, bolu, brownies, souvenir (berupa magnet kulkas, gantungan kunci, cincin kayu, gelang manik, dll), boneka bekantan, sandal, kopi, teh, sambal, aneka rempah, dan masih banyak lagi. Semua harga produknya terjangkau. 😄👍🏻 \n Ada 2 lantai, tapi lantai yang kedua untuk kaos dengan contoh seperti yang di lantai 1. \n Bungkusan belanjanya bisa pakai plastik atau dengan kardus (tambah Rp 7k). \n Sangat recommended beli oleh-oleh khas Banjar disini! 😄👍🏻',
+        rating: 5
+      },
+      {
+        author: 'Agung \“tongkito\” Hadiyanto',
+        text: 'Salah satu tempat belanja oleh-oleh khas Banjarmasin. Makanan khasnya seperti Kuku Macan, sejenis krupuk ikan dengan bentuk menyerupai kuku macan. Ukuran kecil harganya 20rb, kalo sedus isi 10 pak cuma 180rb. Pilihan lain ada Pie susu atau kering seperti bakpia. Sedus 35rb, pilihan ada keju, coklat, nanas, durian. Bisa minta di packing juga disini.',
+        rating: 5
+      },
+      {
+        author: 'Nilai Raissa',
+        text: 'Mohon di perhatikan lagi barang2 yg di jual soalx bnyak barang yg ED di bulan itu jg tp belum di singkirkan',
+        rating: 3
+      },
+    ]
   },
   'toko-andalas': {
     id: uuidv4(),
@@ -101,6 +118,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         username: 'oleholehbanjarmasinandalas'
       }
     ],
+    ulasan: [
+      {
+        author: 'Ilham Farid Maulana',
+        text: 'Tidak ada transparansi harga per itemnya, sistem kasir masih jadul, dikasih nota masih tulis tangan, barang kurang lengkap dan tidak tertata rapi, harga lumayan',
+        rating: 3
+      },
+      {
+        author: 'hllsbi',
+        text: 'Pilihan oleh2 cukup lengkap dan satu satunya tempat singgah pilihan saya buat beli oleh-oleh dari Banjarmasin namun sayang tata letak item kurang maksimal ada beberapa item yang sulit di lihat. Banyak barang tidak berlabel harga repot kalo keseringan nanya. Pelayanan kurang ramah untuk beberapa orang tapi ada juga yang ramah sekali. Bisa menggunakan kardus atau paperbag. Pemasangan kardus juga tersedia.',
+        rating: 4
+      },
+      {
+        author: 'Ivonie Zahra',
+        text: 'Salah satu toko oleh - oleh legend di kota Banjarmasin, produknya sangat lengkap dengan pilihan yang banyak. Harga pun cukup terjangkau, baik oleh - oleh makanan maupun pakaian dan pernak pernik. Namun ruangannya agak sempit, sehingga kurang leluasa memilih produknya. Tempat parkir tersedia, untuk mobil agak terbatas ya.',
+        rating: 5
+      }
+    ]
   },
   'sentra-oleh-oleh-matahari': {
     id: uuidv4(),
@@ -129,6 +163,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         'username': 'sentra_matahari'
       }
     ],
+    ulasan: [
+      {
+        author: 'Bagus AP',
+        text: 'Hari Jum\'at, 07 Februari 2025 Jam 19:06 WITA berkunjung untuk membeli oleh oleh di toko Matahari Sentra Oleh-oleh Khas Kalimantan.\n\nBerbagai macam produk yang dijual disini banyak jenis dari makanan khas kalimantan hingga makanan Pulau Jawa. Dari makanan kering hingga makanan basah pun tersedia, dari cinderamata hingga pernak-pernik kaos pakaian pun ada.\n\nHarganya pun bervariasi sesuai pesanan oleh olehnya, disini saya membeli untuk dibawa ke Jakarta Barat. Setelah selesai acara makan makan diajak mampir kesini untuk di bawa oleh-olehny ke jakarta…',
+        rating: 5
+      },
+      {
+        author: 'Rahman Hilmy Nugroho',
+        text: 'Sentra Oleh-Oleh Matahari adalah tempat yang cocok untuk mencari oleh-oleh khas Kalimantan Selatan. Pilihan produknya sangat beragam, mulai dari amplang, dodol, rimpi, kerupuk ikan, hingga kopi Dayak. Bagi pecinta kuliner, toko ini adalah surga camilan khas Banjar! Ada juga ikan saluang, bilis, dan minuman sirup khas daerah.\n\nToko ini terbagi menjadi dua area: satu untuk makanan khas, seperti amplang dan jajanan lainnya, dan satu lagi untuk souvenir, seperti kain sasirangan, lampit, kaos, serta pernak-pernik unik seperti gantungan kunci. Lokasinya strategis di perempatan jalan utama dekat Fave Hotel, dan tersedia area parkir yang cukup luas.\n\nHarganya tergolong terjangkau dan lebih murah dibandingkan membeli di bandara, meskipun beberapa item agak lebih mahal dibandingkan di Martapura. Untuk pengalaman belanja, manajemen tokonya masih tradisional, jadi kadang harus bertanya langsung soal harga.\n\nSecara keseluruhan, tempat ini nyaman untuk belanja oleh-oleh dengan pilihan lengkap dan lokasi yang mudah dijangkau. Sangat direkomendasikan! 👍',
+        rating: 5
+      },
+      {
+        author: 'Indra adinugraha',
+        text: 'Quite complete with reasonable prices (150k Amplang & 60k Bingka), but the best part is its location, right at the highway to the airport.',
+        rating: 4
+      }
+    ]
   },
   'rumah-oleh-oleh-khas-kalimantan': {
     id: uuidv4(),
@@ -152,6 +203,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         value: '+6285751000034'
       }
     ],
+    ulasan: [
+      {
+        author: 'Fenty masrifah',
+        text: 'Toko oleh-oleh yg recommended ya menurut saya, barangnya lengkap, lebih murah dari yg lain dan enaknya tokonya dekat bandara juga jadi sejalan, kalau yg mau ke bandara mending mampir sini aja buat cari oleh-oleh khas Kalimantan 😁👍🏻\nPelayanannya juga ramah, mau tanya² juga dijelasin detail 👍🏻👍🏻👍🏻',
+        rating: 5
+      },
+      {
+        author: 'Tim haji',
+        text: 'Mas penjualnya ramah sekali dan helpfull.. Serasa beli di tempat keluarga sendiri. Laris dan sukses terus mas..',
+        rating: 5
+      },
+      {
+        author: 'Lie N.',
+        text: 'Recommended banget buat traveller yang singgah di sekitar bandara Syamsudin Noor, oleh-olehnya enak dan bervariasi dengan harga cukup terjangkau. Terlebih owner-nya juga luar biasa ramah dan amanah. 👍\n\nPuas banget belanja oleh-oleh di sini. 👍',
+        rating: 5
+      }
+    ]
   },
   'oleh-oleh-ku-khas-banjarmasin': {
     id: uuidv4(),
@@ -175,6 +243,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         value: '+6282251866367'
       }
     ],
+    ulasan: [
+      {
+        author: 'Aris Nug',
+        text: 'Lumayan banyak pilihan, harga standar. Parkir ada.. Pelayanan baik, kesini untuk beli amplang..',
+        rating: 5
+      },
+      {
+        author: 'Lulu L',
+        text: 'Lumayan lengkap, dari makanan/cemilan khas daerah, pakaian, kain sasirangan, dan souvernir pernak pernik juga ada di sini. Meskipun ga begitu banyak stoknya, tapi lumayan kalo udah ga sempet mampir pasar, harganya juga termasuk standar. Ibunya juga baik & ramah.',
+        rating: 5
+      },
+      {
+        author: '10B_nayla calistya',
+        text: 'toko lumayan lengkap, pelayanan ramah, tempat nya bersih, parkiran mobil strategis 😍👍🏻👍🏻',
+        rating: 5
+      }
+    ]
   },
   'the-house-of-amplang-rena': {
     id: uuidv4(),
@@ -203,6 +288,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         username: 'amplangrenapipih'
       }
     ],
+    ulasan: [
+      {
+        author: 'Kiki Puspita',
+        text: 'Amplang paling recommended karena rasanya gurih, renyah, gak keras kayak amplang lainnya. Cocok buat oleh-oleh, ada juga packaging khusus untuk hampers.',
+        rating: 5
+      },
+      {
+        author: 'Joko warsito',
+        text: 'Enak',
+        rating: 5
+      },
+      {
+        author: 'Arif M',
+        text: 'Enak, cocok di lidah, harga terjangkau',
+        rating: 5
+      }
+    ]
   },
   'bingka-borneo-ibu-hj-masturiah': {
     id: uuidv4(),
@@ -231,6 +333,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         'username': 'bingkaborneo_'
       }
     ],
+    ulasan: [
+      {
+        author: 'Gohan Trunk',
+        text: 'Beli buat oleh2 ke surabaya. Setelah incip rasanya enak, lembut, & manis.\\nUntuk dr segi harga kurang tau apa murah atau mahal. Kl dr segi rasa enak.',
+        rating: 5
+      },
+      {
+        author: 'C. S Nur. A',
+        text: 'Enak dan bersih banget tempatnya. Btw, itu rumah beliau sekaligus toko. Jadi kalau mau beli silahkan masuk aja ke ruang tamu-nya. Soalnya pernah keliling cari² tokonya, takut salah masuk, eh ternyata rumah dijadikan ruang tamunya counter depan! Estetik banget! Jam 4 sorean biasanya sudah sold out!',
+        rating: 5
+      },
+      {
+        author: 'Anang Bengkel',
+        text: 'Bagus',
+        rating: 5
+      }
+    ]
   },
   'abon-haruan-mubarakah': {
     id: uuidv4(),
@@ -254,6 +373,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         value: '+6281351919622'
       }
     ],
+    ulasan: [
+      {
+        author: 'ce',
+        text: 'top banget kak sampe jakarta barang aman. rasanya enak banget',
+        rating: 5
+      },
+      {
+        author: 'r4',
+        text: 'Bru prtama kali nyoba aenakk suka, keringny pas, rempahnya juga gak terlalu kentara, dimakan pake nasi hangat dan kerupuk pas bgt. Terimakasih berkah sllu',
+        rating: 5
+      },
+      {
+        author: 'silafajar11',
+        text: 'Ini recommended bgt buat menu sahur tinggal bikin telur dadar dn tambahkan sedikit bawang goreng',
+        rating: 5
+      },
+    ]
   },
   'snack-udang-ikan-saluang-jasmine': {
     id: uuidv4(),
@@ -279,9 +415,26 @@ export const realUMKM: Record<Slug, Umkm> = {
       {
         type: 'instagram',
         value: 'https://www.instagram.com/toko_oleh_oleh_jasmine/?hl=id',
-        'username': 'toko_oleh_oleh_jasmine'
+        username: 'toko_oleh_oleh_jasmine'
       }
     ],
+    ulasan: [
+      {
+        author: 'Fathan Mujib',
+        text: 'Tempatnya bersih banget, bikin nyaman dari awal masuk. Penjualnya juga ramah, sabar jelasin pilihan menu, dan kasih rekomendasi yang pas. Makanannya enak semua, rasanya benar-benar khas dan kelihatan kalau bahannya segar karena memang dibuat langsung di sini.',
+        rating: 5
+      },
+      {
+        author: 'Jonn',
+        text: 'Rasanya enak-enak, paling favorite snack udang dan amplang-nya! Bikin nagih terus, kemasan bagus & bersih. Yang dijual banyak banget macemnya, Paling pas buat cari oleh-oleh di Banjarmasin, gak bikin kecewa beli disini. Penjualnya ramah banget, top!',
+        rating: 5
+      },
+      {
+        author: 'Kezia Ika',
+        text: 'Harga cukup mahal, namun toko ini produksi sendiri. Ada amplang tengiri 30rb, ikan pipih (musiman) 35rb, saluang goreng, udang goreng, bilis goreng, lais goreng (musiman) 65rb, ada sambal, udang papai 25rb, kacang. Amplang saya suka yang ikan pipih. Stok produk cukup banyak. Tokonya bersih sekali. Produk yang dibeli bisa minta pakai dus, gratis. Parkir cukup untuk mobil masuk halamannya, saya datang pas sepi. Penjual juga ramah.',
+        rating: 4
+      }
+    ]
   },
   'apam-barenda-khas-barabai': {
     id: uuidv4(),
@@ -305,6 +458,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         value: '+6285349772378'
       }
     ],
+    ulasan: [
+      {
+        author: 'Moon Light',
+        text: 'Kuenya Lembut enak, khas dengan kuahnya, bisa makan ditempat, bisa bungkus',
+        rating: 5
+      },
+      {
+        author: 'Muhammad Syafii',
+        text: 'Enak, ramah, santai..',
+        rating: 5
+      },
+      {
+        author: 'LPPQ UIN ANTASARI',
+        text: '',
+        rating: 5
+      }
+    ]
   },
   'irma-sasirangan': {
     id: uuidv4(),
@@ -333,6 +503,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         username: 'irmasasirangan'
       }
     ],
+    ulasan: [
+      {
+        author: 'Genial Achmad Eka Prabawa',
+        text: 'Nice sasirangan, affordable prices',
+        rating: 5
+      },
+      {
+        author: 'Sunarsih Wulandari',
+        text: 'Bagus motif2 kainnya,cocok untuk oleh oleh',
+        rating: 5
+      },
+      {
+        author: 'Nismara Paramayoga',
+        text: 'Kakak-kakak penjaganya ramah, dapat discount dan free pengemasan untuk langsung dikirim juga. Sangat memuaskan',
+        rating: 5
+      }
+    ]
   },
   'nida-sasirangan': {
     id: uuidv4(),
@@ -361,6 +548,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         'username': 'nidasasirangan'
       }
     ],
+    ulasan: [
+      {
+        author: 'Dyna Herliani',
+        text: 'Motif dan warna nya bagus2 lebih variatif, recommended untuk hadiah ataupun oleh2 kain khas dari Banjarmasin.',
+        rating: 5
+      },
+      {
+        author: 'Maria',
+        text: 'I went here for a gift which is Sasirangan. Nida Sasirangan offers so many choices of sasirangan cloth with reasonable price and (of course) they are beautiful! The staffs are friendly and helpful.',
+        rating: 5
+      },
+      {
+        author: 'Puttee moo',
+        text: 'Selalu suka ulun disini, seraba baik, dan selalu langganan',
+        rating: 5
+      }
+    ]
   },
   'pengrajin-souvenir-miniatur-jukung': {
     id: uuidv4(),
@@ -384,6 +588,18 @@ export const realUMKM: Record<Slug, Umkm> = {
         value: '+6283150579963'
       }
     ],
+    ulasan: [
+      {
+        author: 'Muhammad Akbar Hidayat',
+        text: 'Pamannya Ramah',
+        rating: 5
+      },
+      {
+        author: 'Septiani Isywari',
+        text: '',
+        rating: 5
+      }
+    ]
   },
   'pengrajin-purun-galoeh-bandjar': {
     id: uuidv4(),
@@ -412,6 +628,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         username: 'galoehbandjar_anyamanpurun'
       }
     ],
+    ulasan: [
+      {
+        author: 'RetnoS Channel',
+        text: 'Tempatnya cukup jauh sekitar danau Seran maju lagi. Purun ini hand made ya harganya murah karena hasil produksi ibu ibu kampung purun., barang yg diolah cukup rapi kualitasnya bagus',
+        rating: 4
+      },
+      {
+        author: 'Wahidah Zain Martim',
+        text: '',
+        rating: 4
+      },
+      {
+        author: 'Maghdalena Akbar',
+        text: '',
+        rating: 5
+      }
+    ]
   },
   'rumah-sambal-acan-raja-banjar': {
     id: uuidv4(),
@@ -440,6 +673,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         username: 'rumahsambalarb'
       }
     ],
+    ulasan: [
+      {
+        author: 'Susan Bawairi',
+        text: 'Makan di sini bareng teman, cobain banyak menu. Patin bakar & udang bakarnya enak, sambalnya banyak pilihan dan bisa dibeli botolan.\\nTapi untuk menu haliling saya belum dapat \"fell\"nya, menu mandai oseng terlalu berminyak.\\nTempat bersih, pelayanan oke. Worth buat dicoba, terutama yang suka sambal khas Banjar.',
+        rating: 5
+      },
+      {
+        author: 'Dhina Nat',
+        text: 'Enak sekali...\\nPertama kali coba dan pasti kembali lagi,\\nsemua ikan bakar nya segar \u2764\ufe0f\\n\\nIkan patinya tidak ada aroma tanah, jantung pisang nya enak sampe tambah tambah 2x, mandai (gudeg kalimantan) nya rasanya unik dan enakkkk',
+        rating: 5
+      },
+      {
+        author: 'Fabian Jonathan',
+        text: 'Minta sama waiternya air hangat yang dikasih air panas, minta ayam gorengnya jangan masaknya kering yang dimasakin ayam goreng terlalu kering hampir kek makan batu (+ayamnya terlalu asin) , ikan pais patinnya kurang segar, patin panggangnya kurang enak. Pelayanan ramah hanya saja pendengaran salah satu pelayannya kek orang fresh graduate yang kek cuman lulus lulus aja. Pengalaman makan saya jadi pengalaman yang buruk untuk tempat makan ini. \ud83d\udc4e',
+        rating: 2
+      }
+    ]
   },
   'ketupat-kandangan-hj-mursinah': {
     id: uuidv4(),
@@ -463,6 +713,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         value: '+6282155179145'
       }
     ],
+    ulasan: [
+      {
+        author: 'J. norhadi',
+        text: 'Rasa biasa aja untuk lidah ku..aku coba karna penasaran aja..harga lumayan mahal sih untuk porsi dan rasa segitu menurut lidah ku..aku pernah makan yg harga separo dari harga diwarung ini, menurut aku lebih enak di lidah aku rasanya diwarung itu..tp yg namanya selera org beda\u00b2..ada yg lidah suka asin,hambar, sedikit berasa..jd gak ada yg gak enak soal makanan penilaian nya..cuma kecocokan di mulut aja beda\u00b2..jd ini menurut lidah aku ya biasa aja gak ada rasa wow yg aku dapat dgn harga segitu..ada satu rasa atau aroma yg gak ada aku dapat dalam masakan diwarung ini di menu ini..',
+        rating: 4
+      },
+      {
+        author: 'Elita Liem',
+        text: 'Sudah berjualan dari tahun 1965. Tempat makannya masuk kedalam gang sekitar 20m. Nyaman rasanya',
+        rating: 5
+      },
+      {
+        author: 'Fajar Hariadi',
+        text: 'Berjualan di rumah yang masuk di dalam gang, dari depan gang masuk sedikit saja kira-kira 20m.. tersedia ketupat kandangan dan nasi kuning, sambalnya sangat cocok dipadukan dengan kuah ketupatnya, roti pisangnya juga enak.. untuk harga lumayan mahal karena mungkin terkenal dan sudah berjualan dari tahun 1965 (legend)',
+        rating: 5
+      }
+    ]
   },
   'lontong-orari': {
     id: uuidv4(),
@@ -491,6 +758,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         username: 'lontong_orari'
       }
     ],
+    ulasan: [
+      {
+        author: 'Azhar Mareto',
+        text: '2 hari di Banjarmasin. 2x makan malam di sini. Dapat info karena nasi kuning dan lontong sayurnya enak.\\n\\nHari pertama pesan lontong haruan yang ternyata punya kuah gurih sedap, ikan hariannya juga empuk tidak terlalu banyak bumbu, lontongnya besar2 gak kaya di Jawa dipotong2 dulu.\\n\\nHari ke dua pesen nasi kuning haruan yang gak ke foto \ud83d\ude02. Nasinya tipikal nasi yg baru banget masuk mulut saya, kata teman pakai beras karau, yg di asak dengan sedikit air dan tipikal beras khusus gitu deh. Enak dan gak medok2 amat.\\n\\nYang perlu ditingkatkan mungkin pelayanan dari bagian server saja, selain itu udah oke.\\n\\nParkiran cukup untuk 3-4 mobil.',
+        rating: 5
+      },
+      {
+        author: 'Syifa Salsabila Rizkita',
+        text: 'Makanan khas banjar terfavorit saya. Gak nyangka, lontong santan biasa bisa punya rasa gurih dan sedikit manis jadi satu. Di tambah lagi, pakai ikan haruan yang ternyata garing tapi mudah dipotong, dengan bumbu habang yang bikin rasanya makin kaya. Betul-betul makanan otentik khas banjar yang tidak ditemui di kota lain.',
+        rating: 5
+      },
+      {
+        author: 'Maz To',
+        text: 'Makanan khas daerah banjarmasin, dengan isian lontong disiram kuah dan bumbu merah , untuk lauk khas nya ikan haruan (gabus)',
+        rating: 5
+      }
+    ]
   },
   'roti-pisang-nangka-salma': {
     id: uuidv4(),
@@ -519,6 +803,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         username: 'rotipisangsalma_liwarlangkar'
       }
     ],
+    ulasan: [
+      {
+        author: 'H Muhammad Lutfi Albanjari',
+        text: 'salah satu wadai favorit di daerah kelayan tengah... Roti pisang berbagai isi dalamnya. ada pisang ada nangka ada tapai\\n\\nharga 2rb/pcs letaknya persis di depan gang babusalam',
+        rating: 5
+      },
+      {
+        author: 'Lisa Julie Zain',
+        text: 'Wadai nya sintal, manis, gurih, menyatu di mulut\\nNyman gasan cemilan di kawani banyu the',
+        rating: 5
+      },
+      {
+        author: 'Lusi Tj',
+        text: 'Jarak cukup jauh. Antrian paaanjaaaang n panas. Tempat parkir sekalian tempat nunggu jadi benerbener crowded. Tulis nama dulu pesen jadi kalo udah siap ntar di panggil. Harga 2.000/biji. Kuenya campur sama kelapa jadi gurih n padat',
+        rating: 5
+      }
+    ]
   },
   'rumah-makan-idah': {
     id: uuidv4(),
@@ -542,6 +843,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         value: '0511414744'
       }
     ],
+    ulasan: [
+      {
+        author: 'Muhammad Nugraha',
+        text: 'Warung makan yang menyediakan menu masakan Banjar, ada haruan bakar, nila bakar, patin bakar, ayam bakar , berbagai macam paisan (pepes), Udang galah, dll. Rasa masakannya enak, terasa khas Banjar, tempatnya luas, tersedia duduk di kursi atau lesehan, tempat parkirnya luas. Penyajian cepat.',
+        rating: 4
+      },
+      {
+        author: 'Gon Bu',
+        text: 'Grilled food menu, like variant fish, chicken, and lobster\\nbut the taste is different than old time',
+        rating: 5
+      },
+      {
+        author: 'H Muhammad Lutfi Albanjari',
+        text: 'masakan khas banjar.. bisa duduk di kursi bisa juga lesehan, mampir pas jam makan, pelayanan lumayan cepat karena mungkin yg makan tidak terlalu banyak. jadi antrinya sedikit,\\nbanyak tersedia gangan/kuah sayur buat pelengkap makanan\\nsetiap ikan dikasih urap sayur juga\\ntersedia juga makanan tradisional khas banjar di kasir\\nparkiran bisa menampung 10-15 buah mobil\\nmasalah harga ya lumayan lah (tidak terlalu mahal juga)\ud83d\ude01.. ada kualitas ada harga',
+        rating: 4
+      }
+    ]
   },
   'tapai-gambut-5-saudagar': {
     id: uuidv4(),
@@ -570,6 +888,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         username: '5_saudagar'
       }
     ],
+    ulasan: [
+      {
+        author: 'MASTER GMR YT',
+        text: 'Mantap, Tapainya natural dan enak, manisnya pas gk bikin diabetes, luar biasa!',
+        rating: 5
+      },
+      {
+        author: 'Taxi Banjarmasin',
+        text: '',
+        rating: 5
+      },
+      {
+        author: 'Wallet anjir',
+        text: 'Ok, Banar Tapainya',
+        rating: 5
+      }
+    ]
   },
   'kue-ipau-umi-youmna': {
     id: uuidv4(),
@@ -590,6 +925,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         value: '+6281251345710'
       }
     ],
+    ulasan: [
+      {
+        author: 'Dino Sahur',
+        text: 'Banyak varian kue kue enak',
+        rating: 5
+      },
+      {
+        author: 'Akhmad nizomy',
+        text: 'MANTAP dan Recommended',
+        rating: 5
+      },
+      {
+        author: 'Miftahul Jannah',
+        text: 'Ipau yang enak dagingnya berasa gak terlalu lemak gurih dan legit nya seimbang',
+        rating: 5
+      }
+    ]
   },
   'dodol-asli-kandangan-mama-alfi': {
     id: uuidv4(),
@@ -618,6 +970,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         'username': 'dodolmamaalfi.kandangan'
       }
     ],
+    ulasan: [
+      {
+        author: 'Ragman Fachrie',
+        text: 'popular variant of dodol, a traditional Indonesian sweet confection, its soft and melty texture, specifically from Kandangan.',
+        rating: 5
+      },
+      {
+        author: 'Ridwan Waone',
+        text: 'Beli Dodol Langsung Kepusatnya\\n\\nHarganya lebih murah fresh Masi Panas',
+        rating: 5
+      },
+      {
+        author: 'Eko Kuswanto',
+        text: 'Gak sengaja lewat habis pulang dari loksado ngikuti gugel map. Beli dodol deh macem2 dicobain, eh ternyata sekitaran situ pada jual dodol juga, asli kandangan, ya karena ada di kandangan, kocak juga \ud83d\ude05\ud83d\ude2c, semoga umkm kita terus maju.',
+        rating: 5
+      }
+    ]
   },
   'wadai-untuk-abah-hafiz': {
     id: uuidv4(),
@@ -641,6 +1010,13 @@ export const realUMKM: Record<Slug, Umkm> = {
         value: '+6285245953488'
       }
     ],
+    ulasan: [
+      {
+        author: 'Achmad Fairuz',
+        text: '',
+        rating: 5
+      }
+    ]
   },
   'soto-bang-amat': {
     id: uuidv4(),
@@ -665,6 +1041,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         username: 'sotobangamat_'
       }
     ],
+    ulasan: [
+      {
+        author: 'I Dewa Nyoman Anom Manuaba',
+        text: 'Tempat makan nyaman di atas sungai Mertapura. Makan bisa sambil menikmati pemandangan sungai dan ada live musicnya juga. Makanan lezat, perlu dicoba Nasi Soto dicampur sate ayam.',
+        rating: 5
+      },
+      {
+        author: 'Dinda zahra',
+        text: 'ENAK BGTTT, aku dari malang jatim trs ke Banjarmasin karna nemenin mama kerja, dateng2 langsung ke sini karna kata org2 lokal paling enak pasti semua langsung kasi alamat soto bang amat, alhasil 2 hari berturut2 beli disini. seger bgt kaldu nya uenakkk, kayanya soto banjar otentik ini jadi inspirasi buat kaldunya noodle inc di malang deh. karna miriipp bgtt uenak i love kaldunya. trs es kelapa nya dagingnya gede2 bgt suka deh ga kaya di malang tipis',
+        rating: 5
+      },
+      {
+        author: 'Hauna Shafiya',
+        text: 'Kemarin habis UAS kami mau refresing, enak banget suasananya sore sore, kuah soto yang panas\ud83d\udd25 dan suasananya tenang. Karena emang hari kerja dan udah sore bukan jam makan siang, kalau jam makan siang bakalan rameeeeee banget sih.....\\nIni udah ke sekian kalinya kesini, dan tetap suka dengan suasananya, nuansa dan masakannya.\\n\\nIni bukan soto Banjar yang kaldunya kentel banget, tapi ini enak dan mantebbbbb buat kategori soto banjar.\\nKuahnya masih ringan dan cocok buat orang yang gak suka kuah kentel berkaldu, kondimen yang di atas meja juga banyak pilihannya, kecap nya disediakan 2 tipe (kecap asin dan kecap manis), untuk sambelnya tidak yang pedes banget tetapi masih ada cita rasanya.\\n\\nKalau mau dateng kesini dengan eksperimen yang lebih seru datengnya saat jam makan siang dari hari minggu, biasanya saya dan keluarga datang di hari itu, dimana ada pertunjukan musik Banjar dan itu sebuah keseruan tersendiri. Walaupun saat kemarin gak ada itu kami dapat menikmati suasananya.',
+        rating: 5
+      }
+    ]
   },
   'toko-kopiah-ibadah-cap-berlian': {
     id: uuidv4(),
@@ -693,6 +1086,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         username: 'kopiahibadah_capberlian_bjm'
       }
     ],
+    ulasan: [
+      {
+        author: 'Barkatullah Amin',
+        text: 'Toko Kopiah/Peci bersejarah di Banjarmasin',
+        rating: 5
+      },
+      {
+        author: 'Idha Tha',
+        text: 'Toko kopiah lengkap, lokasi toko gampang dicari, pelayanannya mantab, rekomendasi banget buat yg mau cari kopiah berbagai jenis dan ukuran.',
+        rating: 5
+      },
+      {
+        author: 'Aislie Anantama Septiawan',
+        text: '',
+        rating: 5
+      }
+    ]
   },
   'mandai-paman-gundul': {
     id: uuidv4(),
@@ -716,6 +1126,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         value: '+6282254757044'
       }
     ],
+    ulasan: [
+      {
+        author: 'Joko sumartono',
+        text: 'citarasa khas Kalimantan rasa Mandai yang sebenarnya \ud83d\udc4d\ud83c\udffb\ud83d\udc4d\ud83c\udffb\ud83d\udc4d\ud83c\udffb\ud83d\udc4d\ud83c\udffb',
+        rating: 5
+      },
+      {
+        author: 'Azmi yuliani',
+        text: 'tempat jualan produk aslu Balangan yang paling lengkap. harganya murah dan tempatnya bersih dan nyaman. kalo mau beli oleh-oleh khas Balangan bisa langsung kesini ya.',
+        rating: 5
+      },
+      {
+        author: 'Sigit Hary',
+        text: 'Murah',
+        rating: 5
+      }
+    ]
   },
   'nasi-kuning-cempaka': {
     id: uuidv4(),
@@ -744,6 +1171,23 @@ export const realUMKM: Record<Slug, Umkm> = {
         username: 'nkcempaka'
       }
     ],
+    ulasan: [
+      {
+        author: 'Winda Riyanthi',
+        text: 'Nasi Kuning khas Banjar paling enak yang pernah dicoba. Paling suka dengan lauk Sambal Goreng Hatinya. Sebungkus nasi kuning sudah termasuk lauk dengan taburan bawang goreng yang renyah dan serundeng kelapa yang manis di dalamnya. Wajib dimakan dengan sambal untuk menyeimbangkan rasa manis dari bumbu lauk dan serundeng kelapanya. Dapat dijadikan menu andalan untuk sarapan walaupun porsinya terlalu besar untuk dimakan di pagi hari.',
+        rating: 5
+      },
+      {
+        author: 'Anastasia Nindya',
+        text: 'Nyoba nasi kuning+bebek. Bumbu bebeknya enaak, sambel pedes. Oya nasinya super banyak',
+        rating: 5
+      },
+      {
+        author: 'Arfah Yuliani',
+        text: 'Nasi Kuning Cempaka e am! Rasa nasi kuningnya otentik, lauknya lengkap dan segar. Porsinya besar dan harganya sangat worth it. Pelayanan cepat dan tempatnya bersih. Jadi favorit saya kalau ke Banjarmasin!',
+        rating: 5
+      }
+    ]
   },
   'wadai-cincin-bang-jur': {
     id: uuidv4(),
@@ -772,6 +1216,100 @@ export const realUMKM: Record<Slug, Umkm> = {
         username: 'cincin_bangjur'
       }
     ],
+    ulasan: [
+      {
+        author: 'Mirnawati Hasanudin Ali',
+        text: '',
+        rating: 4
+      }
+    ]
+  },
+  'mie-bancir-khas-banjar-agus-sasirangan': {
+    id: uuidv4(),
+    nama: 'Mie Bancir Khas Banjar Agus Sasirangan Outlet KAYUTANGI',
+    deskripsi: 'Mie Bancir Khas Banjar Agus Sasirangan Outlet Kayutangi adalah UMKM kuliner khas Banjar yang menyajikan mie bancir autentik dengan racikan bumbu rempah tradisional, tekstur mie lembut, serta kuah kental yang gurih dan khas. Mengusung konsep penyajian modern tanpa meninggalkan cita rasa asli, usaha ini menghadirkan pengalaman kuliner lokal yang nyaman dan konsisten nikmat. Berlokasi di kawasan Kayutangi, outlet ini menjadi pilihan bagi warga maupun wisatawan yang ingin menikmati kelezatan mie bancir sekaligus mendukung pelestarian kuliner Nusantara melalui produk UMKM daerah.',
+    kategori: ['Destinasi Kuliner'],
+    alamat: 'Jln. Brigjen Jl. Brigjend H. Hasan Basri No.24B, Alalak Utara, Kec. Banjarmasin Utara, Kota Banjarmasin, Kalimantan Selatan 70123',
+    gmapSrc: 'https://maps.app.goo.gl/XJ5TqYtJqqKiiyLx6',
+    gmapIframeSrc: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31865.621073909624!2d114.5684816!3d-3.299959!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de4230a211e0d25%3A0xe38d400f895698ff!2sMie%20Bancir%20Khas%20Banjar%20Agus%20Sasirangan%20Outlet%20KAYUTANGI!5e0!3m2!1sid!2sid!4v1763212169732!5m2!1sid!2sid',
+    foto: [
+      '/umkm-images/mie-bancir-khas-banjar-agus-sasirangan-0.jpg',
+      '/umkm-images/mie-bancir-khas-banjar-agus-sasirangan-1.jpg',
+      '/umkm-images/mie-bancir-khas-banjar-agus-sasirangan-2.jpg',
+      '/umkm-images/mie-bancir-khas-banjar-agus-sasirangan-3.jpg',
+      '/umkm-images/mie-bancir-khas-banjar-agus-sasirangan-4.jpg'
+    ],
+    slug: 'mie-bancir-khas-banjar-agus-sasirangan',
+    kontak: [
+      {
+        type: 'phone',
+        value: '+6289523632292'
+      },
+      {
+        type: 'instagram',
+        value: 'https://www.instagram.com/miebancir_khasbanjar_bjm/',
+        username: 'miebancir_khasbanjar_bjm'
+      }
+    ],
+    ulasan: [
+      {
+        author: 'Syifa Salsabila Rzikita',
+        text: 'Mie bancir pertama yang pernah saya coba. Rasanya medok, penuh rempah dengan warna merah khas dari cabai habang. Satu porsi bagi saya cukup mengenyangkan, meski menurut saya Ayam Bapukah-nya agak amis. Saya juga pesan Kue Lempeng Pisang, manis lembut dengan tambahan keju dan meses. Cocok untuk makanan penutup.',
+        rating: 5
+      },
+      {
+        author: 'Muis Cg',
+        text: 'mie bancir nya enak dengan beberapa varian menarik, mie goreng jawa nya juga cocok di lidah.\\nhanya pegawainya yang sedikit ngegas karena teman kami dari jakarta memang kurang paham diajak bicara bahasa banjar.',
+        rating: 4
+      },
+      {
+        author: 'Elita Nursetiari',
+        text: 'Salah satu tempat makan di Banjarmasin yang direkomendasikan mesin pencaharian.\\n\\nCita rasanya dominan manis.\\nTempat makan dan parkiran luas.',
+        rating: 4
+      }
+    ]
+  },
+  'kue-khas-banjar-sabar-menanti': {
+    id: uuidv4(),
+    nama: 'Kue Khas Banjar Sabar Menanti',
+    deskripsi: 'Kue Khas Banjar Sabar Menanti adalah UMKM kuliner tradisional yang menghadirkan beragam kue basah khas Banjar dengan cita rasa autentik, dibuat menggunakan resep turun-temurun dan bahan pilihan. Usaha ini dikenal karena konsistensi rasa, tekstur kue yang lembut, serta variasi pilihan seperti amparan tatak, putri selat, sari muka lakatan, dan aneka wadai khas lainnya. Dengan menjaga kualitas dan keaslian rasa, Kue Khas Banjar Sabar Menanti menjadi tujuan favorit bagi pencinta kuliner tradisional maupun masyarakat yang ingin menikmati kekayaan kuliner Banjar dalam bentuk kue-kue basah yang lezat dan fresh setiap hari.',
+    kategori: ['Kue Basah'],
+    alamat: 'Jl. Kelayan B Gg. Balai Desa No.depan, Kelayan Tim., Kec. Banjarmasin Sel., Kota Banjarmasin, Kalimantan Selatan 70233',
+    gmapSrc: 'https://maps.app.goo.gl/y4Z2H8DyK3HnYPML7',
+    gmapIframeSrc: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15932.328968408765!2d114.5808898!3d-3.3298583!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de42187712a352f%3A0x10d580453029ab15!2sRoti%20Pisang%20Sabar%20Menanti!5e0!3m2!1sid!2sid!4v1763213533399!5m2!1sid!2sid',
+    foto: [
+      '/umkm-images/kue-khas-banjar-sabar-menanti-0.jpg',
+      '/umkm-images/kue-khas-banjar-sabar-menanti-1.jpg'
+    ],
+    slug: 'kue-khas-banjar-sabar-menanti',
+    kontak: [
+      {
+        type: 'phone',
+        value: '+6285251269396'
+      },
+      {
+        type: 'instagram',
+        value: 'https://www.instagram.com/kuekhasbanjar_sabarmenanti/',
+        username: 'kuekhasbanjar_sabarmenanti'
+      }
+    ],
+    ulasan: [
+      {
+        author: 'Mila wati',
+        text: 'Kue nya enak sekali dan tdk membosan kan pelayanan nya pun jg baik dan sngt cepat sekali dan sdh jd langganan saya',
+        rating: 5
+      },
+      {
+        author: 'Aditya Rahman',
+        text: 'Wadai banjar dengan gula asli tanpa pemanis buatan',
+        rating: 4
+      },
+      {
+        author: 'Hany Fa',
+        text: 'Dasar bjuran nyaman,manisnya pas dan lembut',
+        rating: 5
+      }
+    ]
   }
 };
 
