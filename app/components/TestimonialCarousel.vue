@@ -48,7 +48,7 @@
                                     v-for="star in 5" 
                                     :key="star" 
                                     name="mdi:star" 
-                                    :class="star <= (testimonial.star || 5) ? 'text-yellow-400' : 'text-gray-300'"
+                                    :class="star <= ((testimonial as any).star ?? (testimonial as any).rating ?? 5) ? 'text-yellow-400' : 'text-gray-300'"
                                     class="text-base md:text-lg lg:text-xl"
                                 />
                             </div>
@@ -58,8 +58,8 @@
                                 <h4 class="font-eb-garamond font-bold text-gray-900 text-sm md:text-base lg:text-lg mb-0.5 md:mb-1">
                                     {{ testimonial.author }}
                                 </h4>
-                                <p class="font-dm-sans text-gray-600 text-xs md:text-sm">
-                                    {{ testimonial.role }}
+                                <p v-if="(testimonial as any).role" class="font-dm-sans text-gray-600 text-xs md:text-sm">
+                                    {{ (testimonial as any).role }}
                                 </p>
                             </div>
                         </div>
@@ -107,7 +107,7 @@
 
 <script lang="ts" setup>
 const props = defineProps<{
-    testimonials?: Testimonial[];
+    testimonials?: Testimonial[] | Ulasan[];
 }>();
 
 const defaultTestimonials = computed(() => props.testimonials || [

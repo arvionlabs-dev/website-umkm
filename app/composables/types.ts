@@ -7,7 +7,7 @@ export interface Produk {
 }
 
 export interface Ulasan {
-  id: number;
+  id?: number;
   text: string;
   author: string;
   rating?: number;
