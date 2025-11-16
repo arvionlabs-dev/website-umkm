@@ -10,9 +10,6 @@
         Direktori lengkap UMKM lokal, kuliner, kerajinan tangan, hingga fashion. Semua dalam satu tempat!
       </p>
     </div>
-    <div class="md:absolute md:bottom-24 px-4 w-full md:w-auto">
-      <search-by-location />
-    </div>
   </section>
 
   <UmkmLogoCarousel />

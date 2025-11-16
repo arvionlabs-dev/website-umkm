@@ -23,7 +23,7 @@
       <!-- Categories -->
       <div v-if="umkm.kategori && umkm.kategori.length > 0" class="flex flex-wrap gap-1 mt-2">
         <span v-for="kategori in umkm.kategori.slice(0, 2)" :key="kategori"
-          class="text-xs px-2 py-0.5 bg-green-300 rounded-full font-dm-sans" style="color: #373737;">
+          class="text-xs px-2 py-0.5 bg-[#DCCBA7] text-[#373737] rounded-full font-dm-sans" style="color: #373737;">
           {{ kategori }}
         </span>
         <span v-if="umkm.kategori.length > 2"

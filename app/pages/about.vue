@@ -54,7 +54,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
         <!-- Point 1 -->
         <div class="border-gray-200 border rounded-2xl p-6 md:p-8">
-          <Icon name="mdi:eye" class="text-green-700 text-6xl" />
+          <Icon name="mdi:eye" class="text-[#6F5937] text-6xl" />
           <h3 class="font-dm-sans font-bold text-xl text-gray-900 mb-3">
             Meningkatkan Visibilitas
           </h3>
@@ -64,7 +64,7 @@
           </p>
         </div>
         <div class="border-gray-200 border rounded-2xl p-6 md:p-8">
-          <Icon name="mdi:chart-line" class="text-green-700 text-6xl" />
+          <Icon name="mdi:chart-line" class="text-[#6F5937] text-6xl" />
           <h3 class="font-dm-sans font-bold text-xl text-gray-900 mb-3">
             Meningkatkan Penjualan
           </h3>
@@ -74,7 +74,7 @@
           </p>
         </div>
         <div class="border-gray-200 border rounded-2xl p-6 md:p-8">
-          <Icon name="mdi:currency-usd" class="text-green-700 text-6xl" />
+          <Icon name="mdi:currency-usd" class="text-[#6F5937] text-6xl" />
           <h3 class="font-dm-sans font-bold text-xl text-gray-900 mb-3">
             Memperkuat Ekonomi Lokal
           </h3>
@@ -100,7 +100,7 @@
       <div class="flex flex-col relative z-10 sm:flex-row gap-4 justify-center">
         <NuxtLink to="/umkm"
           class="flex items-center gap-2 bg-white text-yellow-600 px-8 py-4 rounded-lg font-dm-sans font-semibold hover:bg-gray-100 transition">
-          <Icon name="mdi:compass-outline" class="text-green-700 text-2xl" />
+          <Icon name="mdi:compass-outline" class="text-[#373737] text-2xl" />
           <span style="color: #373737;">Jelajahi UMKM</span>
         </NuxtLink>
         <a href="https://wa.me/089692822165" target="_blank"

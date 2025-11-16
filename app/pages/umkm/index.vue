@@ -30,7 +30,7 @@
             </div>
             <Button 
               @click="clearSearch"
-              class="px-4 py-3 hover:bg-gray-100 bg-white border border-gray-200 text-black rounded-lg whitespace-nowrap">
+              class="px-4 py-3 hover:bg-gray-100 bg-white border border-gray-200 text-[#373737] rounded-lg whitespace-nowrap">
               <span class="hidden md:block">
                 Hapus pencarian
               </span>
@@ -54,7 +54,7 @@
               v-for="category in selectedCategories"
               :key="category"
               @click="removeCategory(category)"
-              class="px-4 py-2 hover:bg-green-400 bg-green-300 border text-black rounded-md flex items-center gap-2 transition-colors">
+              class="px-4 py-2 bg-[#DCCBA7] hover:bg-[#cebd9a] border text-[#373737] rounded-md flex items-center gap-2 transition-colors">
               <span>{{ category }}</span>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.5 3.5L3.5 10.5" stroke="#373737" stroke-width="1.5" stroke-linecap="round"
@@ -75,7 +75,7 @@
               v-model="categoryInput" 
               :options="availableCategories" 
               placeholder="+ Tambah Kategori" 
-              class="w-40 md:min-w-48"
+              class="w-40 md:min-w-48 bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
               @update:modelValue="addCategory">
             </VueSelect>
 
@@ -85,8 +85,8 @@
               :class="[
                 'px-4 py-2 border rounded-lg flex items-center gap-2 transition-colors whitespace-nowrap cursor-pointer',
                 isLocationFilterActive 
-                  ? 'bg-yellow-500 text-white border-yellow-500 hover:bg-yellow-600' 
-                  : 'bg-green-700 text-white border-green-700 hover:bg-green-800'
+                  ? 'bg-[#6F5937] hover:bg-[#645033] text-white' 
+                  : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'
               ]">
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -104,7 +104,7 @@
               :class="[
                 'px-4 py-2 border rounded-lg flex items-center gap-2 transition-colors whitespace-nowrap',
                 showOnlyFavorites 
-                  ? 'bg-yellow-500 text-white border-yellow-500 hover:bg-yellow-600' 
+                  ? 'bg-[#6F5937] hover:bg-[#645033] text-white'
                   : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'
               ]">
               <Icon :name="showOnlyFavorites ? 'mdi:heart' : 'mdi:heart-outline'" class="text-xl" />
@@ -142,7 +142,7 @@
           <h3 class="text-xl font-semibold text-gray-700 mb-2">Tidak ada UMKM ditemukan</h3>
           <p class="text-gray-500 mb-4">Coba ubah filter atau kata kunci pencarian Anda</p>
           <button @click="resetFilters"
-            class="px-6 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors">
+            class="px-6 py-2 bg-[#6F5937] hover:bg-[#645033] text-white rounded-lg transition-colors">
             Reset Filter
           </button>
         </div>
@@ -169,7 +169,7 @@
           <button v-for="page in visiblePages" :key="page" @click="currentPage = page" :class="[
             'px-4 py-2 rounded-lg font-medium transition-colors',
             currentPage === page
-              ? 'bg-green-700 text-white'
+              ? 'bg-[#6F5937] text-white'
               : 'bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 cursor-pointer'
           ]">
             {{ page }}

@@ -1,6 +1,6 @@
 <template>
   <section class="px-4 md:px-8 max-w-4xl mx-auto lg:px-16 py-8 flex flex-col gap-4 items-center overflow-hidden">
-    <h2 class="text-2xl font-eb-garamond font-bold text-center">Sudah dipercaya oleh banyak UMKM</h2>
+    <h2 class="text-2xl font-eb-garamond font-bold text-[#373737] text-center">UMKM mitra dan pengguna layanan</h2>
 
     <!-- Infinite Scrolling Container -->
     <div class="w-full inline-flex flex-nowrap overflow-hidden mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-200px),transparent_100%)]">

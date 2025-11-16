@@ -52,7 +52,7 @@
 
           <button @click="toggleFavorite" :class="[
             'flex items-center justify-center gap-2 rounded-lg px-4 md:px-6 py-2 md:py-3 cursor-pointer transition-colors',
-            isFavorited ? 'bg-yellow-500 hover:bg-yellow-600 text-white' : 'bg-gray-200 hover:bg-gray-300 text-gray-700'
+            isFavorited ? 'bg-[#6F5937] hover:bg-[#645033] text-white' : 'bg-gray-200 hover:bg-gray-300 text-gray-700'
           ]">
             <Icon :name="isFavorited ? 'mdi:heart' : 'mdi:heart-outline'" size="24" />
             <span class="font-semibold text-sm md:text-base">
@@ -74,7 +74,7 @@
     <h2 class="text-2xl md:text-4xl font-bold text-center font-eb-garamond" style="color: #373737;">Lokasi UMKM</h2>
     <p class="mb-4 text-base w-full md:text-lg lg:text-xl flex gap-2 items-start md:items-center">
       <span class="text-2xl shrink-0 items-center justify-center flex flex-col">
-        <Icon name="material-symbols:location-on" class="text-green-700" />
+        <Icon name="material-symbols:location-on" class="text-[#6F5937]" />
       </span>
       <span class="text-base leading-relaxed">
         {{ currentUMKM.alamat }}

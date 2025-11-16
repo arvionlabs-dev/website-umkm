@@ -46,7 +46,7 @@ onUnmounted(() => {
         style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </ClientOnly>
     <button v-if="showGoogleMapLink" :disabled="locationLangtitudeAndLongtitude == null" type="button"
-      class="gap-2 px-5 py-2.5 mx-auto md:w-1/3 flex justify-center text-sm font-medium text-white items-center bg-green-700 hover:bg-green-800 rounded-lg text-center disabled:opacity-50 disabled:cursor-not-allowed">
+      class="gap-2 px-5 py-2.5 mx-auto md:w-1/3 flex justify-center text-sm font-medium text-white items-center bg-[#6F5937] hover:bg-[#645033] rounded-lg text-center disabled:opacity-50 disabled:cursor-not-allowed">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="size-6">
         <path stroke-linecap="round" stroke-linejoin="round"
